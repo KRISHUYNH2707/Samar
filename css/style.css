@@ -14,13 +14,19 @@ body, html {
     padding: 40px 0;
 }
 
+header {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
 .header__content {
     display: flex;
-    justify-content: space-between;
     text-align: center;
-
+    justify-content: space-between;
+    max-width: 1200px;
     margin: 0 auto;
-    width: 65%;
 }
 
 .header__content li {
@@ -105,21 +111,33 @@ nav li span {
   }
 
 .carousel {
-    background-image: url(../image/bg16.png);
+    background-image: url(../image/pic2.png);
     background-position: top;
     background-size: 100%;
+    padding-top: 180px;
 }
 
 .carousel__content {
-    margin: 0 auto;
-    width: 65%;
+    /* margin: 0 auto;
+    width: 80%; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
+.carousel__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-.carousel__title p:first-of-type {
+.carousel__text {
+    width: 60%;
+}
+
+.carousel__img {
+    width: 40%;
+}
+
+.carousel__text .carousel__title > p {
     font-size: 22px;
     color: #f55f8d;
     font-weight: 600;
@@ -133,12 +151,6 @@ nav li span {
     line-height: 1.1;
 }
 
-.carousel__title p:last-of-type {
-    font-size: 18px;
-    color: grey;
-    margin-bottom: 20px;
-}
-
 .carousel__article {
     display: flex;
     flex-direction: column;
@@ -146,11 +158,15 @@ nav li span {
     margin-bottom: 20px;
 }
 
-.carousel__article p {
+.carousel__article > p {
     font-size: 20px;
     color: grey;
 }
 
+.carousel__item p {
+    font-size: 20px;
+    color: grey;
+}
 .carousel__article .carousel__item{
     display: flex;
     align-items: center;
@@ -168,3 +184,16 @@ nav li span {
     margin-right: 10px
 }   
 
+.img__banner{
+    width: 500px;
+    margin-left: 10px;
+}
+
+.img__banner img {
+    width: 100%;
+    display: block;
+}
+
+.animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+  }
